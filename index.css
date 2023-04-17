@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import "./styles/header.css";
+@import "./styles/content.css";
+@import "./styles/footer.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+span {
+  color: #012AC0;
+}
+
+svg path {
+  fill: rgb(255, 0, 0);
+}
+
+ul, ol {
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

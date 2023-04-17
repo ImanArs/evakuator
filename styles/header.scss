@@ -1,0 +1,35 @@
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+
+        a {
+            padding: 0 30px;
+            font-size: 16px;
+            font-weight: 500; 
+        }
+        :first-child {
+            color: #012AC0;
+        }   
+    }
+    .header-contact {
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+        button {
+            padding: 10px;
+            background: #012AC0;
+            border: none;
+            border-radius: 10px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

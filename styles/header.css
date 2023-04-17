@@ -1,0 +1,30 @@
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav a {
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+header nav :first-child {
+  color: #012AC0;
+}
+header .header-contact a {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+header .header-contact button {
+  padding: 10px;
+  background: #012AC0;
+  border: none;
+  border-radius: 10px;
+}
+header .header-contact button a {
+  color: #fff;
+}/*# sourceMappingURL=header.css.map */
