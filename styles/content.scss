@@ -68,9 +68,19 @@ main {
                           // #04B500E5
                           // #0038FFE5
                           // #9E00FFE5
-                          :first-child {
+                          &:nth-child(1) {
                               path {
-                                  fill: #012AC0;
+                                  fill: #04B500E5;
+                              }
+                          }
+                          &:nth-child(2) {
+                              path {
+                                  fill: #0038FFE5;
+                              }
+                          }
+                          &:nth-child(3) {
+                              path {
+                                  fill: #9E00FFE5;
                               }
                           }
                       }
@@ -144,10 +154,32 @@ main {
                     background: #012AC0;
                     padding: 10px 80px;
                     color: #fff;
+                    font-size: 20px;
                 }
                 .social-media {
                     width: 235px;
+                    div {
+                        display: flex;
+                        justify-content: space-evenly;
 
+                        svg {
+                            &:nth-child(1) {
+                                path {
+                                    fill: #04B500E5;
+                                }
+                            }
+                            &:nth-child(2) {
+                                path {
+                                    fill: #0038FFE5;
+                                }
+                            }
+                            &:nth-child(3) {
+                                path {
+                                    fill: #9E00FFE5;
+                                }
+                            }
+                        }
+                    }   
                 }
             }
         }
@@ -222,7 +254,7 @@ main {
     }
     .sell_block {
         width: 763px;
-        margin: 0 auto;
+        margin: 100px auto;
         &--heading {
             text-align: center;
             h2 {
@@ -232,7 +264,7 @@ main {
             p {
                 font-size: 32px;
                 font-weight: 300;
-                padding: 20px 0;
+                padding: 30px 0;
             }
         }
         .sell_block--form {
@@ -256,9 +288,9 @@ main {
                 }
                 h2 {
                     margin: 10px auto;
-                    // display: flex;
+                    
                     font-size: 42px;
-                    // justify-content: center;
+                    
                     color: #012AC0;
                 }
                 div {
@@ -273,9 +305,19 @@ main {
                         // #04B500E5
                         // #0038FFE5
                         // #9E00FFE5
-                        :first-child {
+                        &:nth-child(1) {
                             path {
-                                fill: #012AC0;
+                                fill: #04B500E5;
+                            }
+                        }
+                        &:nth-child(2) {
+                            path {
+                                fill: #0038FFE5;
+                            }
+                        }
+                        &:nth-child(3) {
+                            path {
+                                fill: #9E00FFE5;
                             }
                         }
                     }
@@ -364,18 +406,26 @@ main {
 .guarantee {
     width: 100%;
     &_heading {
+        margin: 0 20px;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-
-        margin-left: 20px;
-        h2 {
-            width: 760px;
-            font-size: 32px;
+        .guarantee_heading--top {
+            h2 {
+                width: 760px;
+                font-size: 32px;
+            }
+            p {
+                font-size: 22px;
+                width: 77%;
+                margin: 20px 0;
+            }
         }
         img {
             width: 460px;
         }
+
     }
     &_cards {
         
@@ -391,31 +441,24 @@ main {
             position: relative;
 
             padding: 20px;
-            background: #161619;
-            color: #fff;
+            // background: #161619;
+            color: #000;
 
             border: 1px solid #a0a0a0;
             border-radius: 15px;
             text-align: center;
+            transition: ease-in-out .3s;
             h4 {
                 font-size: 30px;
             }
             p {
                 padding: 25px 18px;
-                font-size: 18px;
+                font-size: 16px;
             }
-            // &::after {
-            //     content: '-';
-            //     color: #012AC0;
-            //     font-size: 70px;
-            //     position: absolute;
-            //     top: 27%;
-            //     right: -6%;
-            //     &:last-child {
-            //         display: none;
-            //     }
-
-            // }
+            &:hover {
+                background: #191919;
+                color: #fff;
+            }
         }
         
     }
@@ -463,3 +506,446 @@ main {
         }
     }
 }
+.exampleCars_block {
+    &--wrapper {
+        margin-top: 65px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .card {
+            max-width: 400px;
+            border: 1px solid #000;
+            border-radius: 15px;
+            img {
+                border-radius: 15px 15px 0 0;
+                width: 100%;
+            }
+            &-info {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px 30px;
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    } 
+}
+
+// media query
+@media screen and (max-width: 1280px) {}   
+@media screen and (max-width: 1024px) {
+    main {
+        max-width: 1024px;
+        width: 100%;
+        .mainBlock {
+            width: 100%;
+            .main_block{
+              width: 660px;
+          
+              h1 {
+                  font-size: 34px;
+                  font-weight: 500;
+              }
+              ul {
+                  list-style: none;
+          
+                  margin: 36px 0;
+                  li {
+                      margin: 20px 0;
+          
+                      align-items: center;
+                      img {
+                          width: 25px;
+          
+                          margin-right: 15px;
+                      }
+                  }
+              }
+              .main_block--form {
+                  width: 600px;
+                  padding: 32px;
+          
+                  border: 1px solid #cecece;
+                  border-radius: 15px;
+                  box-shadow: 1px 1px 10px #a0a0a0;
+                  .main_block--form_userInfo{
+                      width: 200px;
+          
+                      p {
+                          font-size: 14px;
+                      }
+                      h2 {
+                        margin: 10px auto;
+                        font-size: 36px;
+                    }
+                      .main_block--form_userInfo--socialmedia {
+                      }
+                  }
+                  .main_block--form_userTools{
+                      width: 367px;
+                      input {
+                          width: inherit;
+                          padding: 18px 24px;
+                          margin-bottom: 8px;
+                          font-size: 16px;
+                      }
+                      button {
+                          border-radius: 18px;
+                          padding: 18px 0;
+                      }
+                  }
+              }
+            }
+            .mainBlock_right {
+                background: url(../assets/image\ 852mainCar.png);
+                background-size: cover;
+                width: 320px;
+                height: 400px;
+            }
+        }
+        .rateCar {
+            margin-top: 100px;
+            width: 100%;
+    
+            padding: 70px 0;
+            &--info {
+                width: 600px;
+                h2 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+                &_userTools {
+                    width: 470px;
+                    button {
+                        margin-top: 20px;
+                        border: none;
+                        border-radius: 15px;
+                        background: #012AC0;
+                        padding: 10px 70px;
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                    .social-media {
+                        width: 235px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .sellCar_block {
+            margin-top: 100px;
+            width: 100%;
+            .sellCar--heading {
+                width: 100%;
+                h2 {
+                    font-size: 26px;
+                }
+                &_right {
+    
+                    border-radius: 16px;
+                    margin-right: 74px;
+                    padding: 21px;
+                    p {
+                        width: 200px;
+                        border-right: 3px solid #fff;
+                        border-radius: 2px;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    svg {
+                        margin-left: 10px;
+                        width: 40px;
+                        path {
+                            
+                            fill: #fff;
+                        }
+                    }
+                }   
+            }
+            .sellCar--info {
+                width: 99%;
+                margin-right: 74px;
+                margin-top: 40px;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                .info_left {
+                    ol {
+                        width: 400px;
+                        li {
+                            align-items: center;
+                            display: flex;
+                            justify-content: space-between;
+    
+                            font-size: 17px;
+                            font-weight: 700;
+    
+                            margin-top: 40px;
+                            gap: 10px;
+                            p {
+                                width: 300px;
+    
+                                font-weight: 400;
+                            }
+                            img {
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
+                .info_right {
+                    img  {
+                        width: 550px;
+                    }
+                }
+            }
+        }
+    }
+    .whatIndeed {
+        width: 100%;
+        margin-top: 100px;
+        padding: 62px 0;
+    
+        background: no-repeat url(../assets/Отценить\ автоwhatIndeed.png);
+        background-size: cover;
+    
+        color: #fff;
+        &--wrapper {
+            text-align: center;
+            h2 {
+                font-size: 36px;
+            }
+            button {
+                font-size: 17px;
+                padding: 16px 23px;
+    
+                border-radius: 10px;
+            }
+            &_card {
+                width: 100%;
+                margin: 40px 0;
+                gap: 17px;
+                .card {
+                    width: calc(100% - 77%);
+    
+                    padding: 20px;
+                    border-radius: 15px;
+                    h4 {
+                        font-size: 22px;
+                    }
+                    p {
+                        padding: 15px 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .guarantee {
+        width: 100%;
+        &_heading {
+            width: 98%;
+            justify-content: space-evenly;
+            margin: 0 20px;
+            .guarantee_heading--top {
+                width: 90%;
+                h2 {
+                    width: 560px;
+                    font-size: 26px;
+                }
+                p {
+                    font-size: 17px;
+                    width: 77%;
+                    margin: 20px 0;
+                }
+            }
+            img {
+                width: 400px;
+            }
+    
+        }
+        &_cards {
+            
+            width: 100%;
+            margin: 40px 0;
+            gap: 17px;
+    
+            display: flex;
+            justify-content: center;
+    
+            div {
+                width: calc(100% - 77%);
+                position: relative;
+    
+                padding: 20px;
+    
+                border: 1px solid #a0a0a0;
+                border-radius: 15px;
+                text-align: center;
+                transition: ease-in-out .3s;
+                h4 {
+                    font-size: 30px;
+                }
+                p {
+                    padding: 10px;
+                    font-size: 13px;
+                }
+                &:hover {
+                    background: #191919;
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+    .about {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            width: 600px;
+            h2 {
+                font-size: 28px;
+            }
+            p {
+                padding: 35px 0;
+                font-size: 19px;
+            }
+        }
+        &-right{
+            width: 560px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            h3 {
+                font-weight: 500;
+                font-size: 30px;
+                padding: 10px 0;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .exampleCars_block {
+        &--wrapper {
+            margin-top: 65px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            .card {
+                max-width: 300px;
+                border: 1px solid #000;
+                border-radius: 15px;
+                img {
+                    border-radius: 15px 15px 0 0;
+                    width: 100%;
+                }
+                &-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 20px 30px;
+                    div {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        } 
+    }
+    main {
+    .sell_block {
+        width: 660px;
+        margin: 100px auto;
+        &--heading {
+            text-align: center;
+            h2 {
+                font-weight: 700;
+                span {
+                    font-size: 34px;
+                }
+            }
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                padding: 30px 0;
+            }
+        }
+        .sell_block--form {
+            width: 600px;
+            padding: 32px;
+            margin: 0 auto;
+    
+            border: 1px solid #cecece;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px #a0a0a0;
+            
+            display: flex;
+            justify-content: space-between;
+            .sell_block--form_userInfo{
+                width: 200px;
+    
+                p {
+                    font-size: 14px;
+    
+                    color: #012AC0;
+                }
+                h2 {
+                    margin: 10px auto;
+                    text-align: center;
+                    font-size: 28px;
+                    
+                    color: #012AC0;
+                }
+                div {
+                    display: flex;
+                    justify-content: center;
+                    svg {
+                        width: 60px;
+                    }
+                }
+                .sell_block--form_userInfo--socialmedia {
+                    
+                }
+            }
+            .sell_block--form_userTools{
+                width: 360px;
+    
+                display: flex;
+                flex-direction: column;
+                input {
+                    width: inherit;
+                    padding: 18px 24px;
+                    margin-bottom: 8px;
+                    font-size: 16px;
+    
+                    border-radius: 18px;
+                    border: 1px solid #c0c0c0;
+                }
+                button {
+                    // width: inherit;
+                    border-radius: 18px;
+                    padding: 18px 0;
+    
+                    border: none;
+                    background: #012AC0;
+                    color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}   

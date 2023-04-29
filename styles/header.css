@@ -1,3 +1,7 @@
+.header_mobile {
+  display: none;
+}
+
 header {
   max-width: 1440px;
   margin: 0 auto;
@@ -27,4 +31,89 @@ header .header-contact button {
 }
 header .header-contact button a {
   color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    max-width: 1280px;
+  }
+  header nav a {
+    padding: 0 20px;
+    font-size: 15px;
+  }
+  header .header-contact a {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  header .header-contact button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    max-width: 1024px;
+  }
+  header nav a {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  header .header-contact a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  header .header-contact button a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 768px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  header nav a {
+    padding: 0 5px;
+    font-size: 13px;
+  }
+  header .header-contact a {
+    display: none;
+  }
+  header .header-contact button {
+    padding: 5px;
+  }
+  header .header-contact button a {
+    display: block;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 640px) {
+  header {
+    max-width: 768px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  header nav a {
+    padding: 0 2px;
+    font-size: 11px;
+  }
+  header .header-contact a {
+    display: none;
+  }
+  header .header-contact button {
+    padding: 6px;
+  }
+  header .header-contact button a {
+    display: block;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    display: none;
+  }
+  .header_mobile {
+    display: block;
+  }
 }/*# sourceMappingURL=header.css.map */

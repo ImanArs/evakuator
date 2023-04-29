@@ -57,8 +57,14 @@ main .mainBlock .main_block .main_block--form .main_block--form_userInfo div {
 main .mainBlock .main_block .main_block--form .main_block--form_userInfo div svg {
   width: 60px;
 }
-main .mainBlock .main_block .main_block--form .main_block--form_userInfo .main_block--form_userInfo--socialmedia svg :first-child path {
-  fill: #012AC0;
+main .mainBlock .main_block .main_block--form .main_block--form_userInfo .main_block--form_userInfo--socialmedia svg:nth-child(1) path {
+  fill: rgba(4, 181, 0, 0.8980392157);
+}
+main .mainBlock .main_block .main_block--form .main_block--form_userInfo .main_block--form_userInfo--socialmedia svg:nth-child(2) path {
+  fill: rgba(0, 56, 255, 0.8980392157);
+}
+main .mainBlock .main_block .main_block--form .main_block--form_userInfo .main_block--form_userInfo--socialmedia svg:nth-child(3) path {
+  fill: rgba(158, 0, 255, 0.8980392157);
 }
 main .mainBlock .main_block .main_block--form .main_block--form_userTools {
   width: 467px;
@@ -121,9 +127,23 @@ main .rateCar--info_userTools button {
   background: #012AC0;
   padding: 10px 80px;
   color: #fff;
+  font-size: 20px;
 }
 main .rateCar--info_userTools .social-media {
   width: 235px;
+}
+main .rateCar--info_userTools .social-media div {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .rateCar--info_userTools .social-media div svg:nth-child(1) path {
+  fill: rgba(4, 181, 0, 0.8980392157);
+}
+main .rateCar--info_userTools .social-media div svg:nth-child(2) path {
+  fill: rgba(0, 56, 255, 0.8980392157);
+}
+main .rateCar--info_userTools .social-media div svg:nth-child(3) path {
+  fill: rgba(158, 0, 255, 0.8980392157);
 }
 main .sellCar_block {
   margin-top: 100px;
@@ -185,7 +205,7 @@ main .sellCar_block .sellCar--info .info_left ol li p {
 }
 main .sell_block {
   width: 763px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 main .sell_block--heading {
   text-align: center;
@@ -197,7 +217,7 @@ main .sell_block--heading h2 {
 main .sell_block--heading p {
   font-size: 32px;
   font-weight: 300;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 main .sell_block .sell_block--form {
   width: 760px;
@@ -228,8 +248,14 @@ main .sell_block .sell_block--form .sell_block--form_userInfo div {
 main .sell_block .sell_block--form .sell_block--form_userInfo div svg {
   width: 60px;
 }
-main .sell_block .sell_block--form .sell_block--form_userInfo .sell_block--form_userInfo--socialmedia svg :first-child path {
-  fill: #012AC0;
+main .sell_block .sell_block--form .sell_block--form_userInfo .sell_block--form_userInfo--socialmedia svg:nth-child(1) path {
+  fill: rgba(4, 181, 0, 0.8980392157);
+}
+main .sell_block .sell_block--form .sell_block--form_userInfo .sell_block--form_userInfo--socialmedia svg:nth-child(2) path {
+  fill: rgba(0, 56, 255, 0.8980392157);
+}
+main .sell_block .sell_block--form .sell_block--form_userInfo .sell_block--form_userInfo--socialmedia svg:nth-child(3) path {
+  fill: rgba(158, 0, 255, 0.8980392157);
 }
 main .sell_block .sell_block--form .sell_block--form_userTools {
   width: 467px;
@@ -301,14 +327,20 @@ main .sell_block .sell_block--form .sell_block--form_userTools button {
   width: 100%;
 }
 .guarantee_heading {
+  margin: 0 20px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
 }
-.guarantee_heading h2 {
+.guarantee_heading .guarantee_heading--top h2 {
   width: 760px;
   font-size: 32px;
+}
+.guarantee_heading .guarantee_heading--top p {
+  font-size: 22px;
+  width: 77%;
+  margin: 20px 0;
 }
 .guarantee_heading img {
   width: 460px;
@@ -324,18 +356,22 @@ main .sell_block .sell_block--form .sell_block--form_userTools button {
   width: 23%;
   position: relative;
   padding: 20px;
-  background: #161619;
-  color: #fff;
+  color: #000;
   border: 1px solid #a0a0a0;
   border-radius: 15px;
   text-align: center;
+  transition: ease-in-out 0.3s;
 }
 .guarantee_cards div h4 {
   font-size: 30px;
 }
 .guarantee_cards div p {
   padding: 25px 18px;
-  font-size: 18px;
+  font-size: 16px;
+}
+.guarantee_cards div:hover {
+  background: #191919;
+  color: #fff;
 }
 
 .about {
@@ -377,4 +413,397 @@ main .sell_block .sell_block--form .sell_block--form_userTools button {
 }
 .car_model--wrapper div {
   margin: 20px 10px;
+}
+
+.exampleCars_block--wrapper {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.exampleCars_block--wrapper .card {
+  max-width: 400px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+.exampleCars_block--wrapper .card img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+.exampleCars_block--wrapper .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 30px;
+}
+.exampleCars_block--wrapper .card-info div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    max-width: 1024px;
+    width: 100%;
+  }
+  main .mainBlock {
+    width: 100%;
+  }
+  main .mainBlock .main_block {
+    width: 660px;
+  }
+  main .mainBlock .main_block h1 {
+    font-size: 34px;
+    font-weight: 500;
+  }
+  main .mainBlock .main_block ul {
+    list-style: none;
+    margin: 36px 0;
+  }
+  main .mainBlock .main_block ul li {
+    margin: 20px 0;
+    align-items: center;
+  }
+  main .mainBlock .main_block ul li img {
+    width: 25px;
+    margin-right: 15px;
+  }
+  main .mainBlock .main_block .main_block--form {
+    width: 600px;
+    padding: 32px;
+    border: 1px solid #cecece;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #a0a0a0;
+  }
+  main .mainBlock .main_block .main_block--form .main_block--form_userInfo {
+    width: 200px;
+  }
+  main .mainBlock .main_block .main_block--form .main_block--form_userInfo p {
+    font-size: 14px;
+  }
+  main .mainBlock .main_block .main_block--form .main_block--form_userInfo h2 {
+    margin: 10px auto;
+    font-size: 36px;
+  }
+  main .mainBlock .main_block .main_block--form .main_block--form_userTools {
+    width: 367px;
+  }
+  main .mainBlock .main_block .main_block--form .main_block--form_userTools input {
+    width: inherit;
+    padding: 18px 24px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  main .mainBlock .main_block .main_block--form .main_block--form_userTools button {
+    border-radius: 18px;
+    padding: 18px 0;
+  }
+  main .mainBlock .mainBlock_right {
+    background: url(../assets/image\ 852mainCar.png);
+    background-size: cover;
+    width: 320px;
+    height: 400px;
+  }
+  main .rateCar {
+    margin-top: 100px;
+    width: 100%;
+    padding: 70px 0;
+  }
+  main .rateCar--info {
+    width: 600px;
+  }
+  main .rateCar--info h2 {
+    font-size: 30px;
+  }
+  main .rateCar--info p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  main .rateCar--info_userTools {
+    width: 470px;
+  }
+  main .rateCar--info_userTools button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    background: #012AC0;
+    padding: 10px 70px;
+    color: #fff;
+    font-size: 16px;
+  }
+  main .rateCar--info_userTools .social-media {
+    width: 235px;
+    text-align: center;
+  }
+  main .sellCar_block {
+    margin-top: 100px;
+    width: 100%;
+  }
+  main .sellCar_block .sellCar--heading {
+    width: 100%;
+  }
+  main .sellCar_block .sellCar--heading h2 {
+    font-size: 26px;
+  }
+  main .sellCar_block .sellCar--heading_right {
+    border-radius: 16px;
+    margin-right: 74px;
+    padding: 21px;
+  }
+  main .sellCar_block .sellCar--heading_right p {
+    width: 200px;
+    border-right: 3px solid #fff;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  main .sellCar_block .sellCar--heading_right svg {
+    margin-left: 10px;
+    width: 40px;
+  }
+  main .sellCar_block .sellCar--heading_right svg path {
+    fill: #fff;
+  }
+  main .sellCar_block .sellCar--info {
+    width: 99%;
+    margin-right: 74px;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .sellCar_block .sellCar--info .info_left ol {
+    width: 400px;
+  }
+  main .sellCar_block .sellCar--info .info_left ol li {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 40px;
+    gap: 10px;
+  }
+  main .sellCar_block .sellCar--info .info_left ol li p {
+    width: 300px;
+    font-weight: 400;
+  }
+  main .sellCar_block .sellCar--info .info_left ol li img {
+    width: 60px;
+  }
+  main .sellCar_block .sellCar--info .info_right img {
+    width: 550px;
+  }
+  .whatIndeed {
+    width: 100%;
+    margin-top: 100px;
+    padding: 62px 0;
+    background: no-repeat url(../assets/Отценить\ автоwhatIndeed.png);
+    background-size: cover;
+    color: #fff;
+  }
+  .whatIndeed--wrapper {
+    text-align: center;
+  }
+  .whatIndeed--wrapper h2 {
+    font-size: 36px;
+  }
+  .whatIndeed--wrapper button {
+    font-size: 17px;
+    padding: 16px 23px;
+    border-radius: 10px;
+  }
+  .whatIndeed--wrapper_card {
+    width: 100%;
+    margin: 40px 0;
+    gap: 17px;
+  }
+  .whatIndeed--wrapper_card .card {
+    width: 23%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .whatIndeed--wrapper_card .card h4 {
+    font-size: 22px;
+  }
+  .whatIndeed--wrapper_card .card p {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+  .guarantee {
+    width: 100%;
+  }
+  .guarantee_heading {
+    width: 98%;
+    justify-content: space-evenly;
+    margin: 0 20px;
+  }
+  .guarantee_heading .guarantee_heading--top {
+    width: 90%;
+  }
+  .guarantee_heading .guarantee_heading--top h2 {
+    width: 560px;
+    font-size: 26px;
+  }
+  .guarantee_heading .guarantee_heading--top p {
+    font-size: 17px;
+    width: 77%;
+    margin: 20px 0;
+  }
+  .guarantee_heading img {
+    width: 400px;
+  }
+  .guarantee_cards {
+    width: 100%;
+    margin: 40px 0;
+    gap: 17px;
+    display: flex;
+    justify-content: center;
+  }
+  .guarantee_cards div {
+    width: 23%;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #a0a0a0;
+    border-radius: 15px;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+  }
+  .guarantee_cards div h4 {
+    font-size: 30px;
+  }
+  .guarantee_cards div p {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .guarantee_cards div:hover {
+    background: #191919;
+    color: #fff;
+  }
+  .about {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-left {
+    width: 600px;
+  }
+  .about-left h2 {
+    font-size: 28px;
+  }
+  .about-left p {
+    padding: 35px 0;
+    font-size: 19px;
+  }
+  .about-right {
+    width: 560px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .about-right h3 {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  .about-right p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .exampleCars_block--wrapper {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .exampleCars_block--wrapper .card {
+    max-width: 300px;
+    border: 1px solid #000;
+    border-radius: 15px;
+  }
+  .exampleCars_block--wrapper .card img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+  }
+  .exampleCars_block--wrapper .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 30px;
+  }
+  .exampleCars_block--wrapper .card-info div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .sell_block {
+    width: 660px;
+    margin: 100px auto;
+  }
+  main .sell_block--heading {
+    text-align: center;
+  }
+  main .sell_block--heading h2 {
+    font-weight: 700;
+  }
+  main .sell_block--heading h2 span {
+    font-size: 34px;
+  }
+  main .sell_block--heading p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 30px 0;
+  }
+  main .sell_block .sell_block--form {
+    width: 600px;
+    padding: 32px;
+    margin: 0 auto;
+    border: 1px solid #cecece;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #a0a0a0;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userInfo {
+    width: 200px;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userInfo p {
+    font-size: 14px;
+    color: #012AC0;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userInfo h2 {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 28px;
+    color: #012AC0;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userInfo div {
+    display: flex;
+    justify-content: center;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userInfo div svg {
+    width: 60px;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userTools {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userTools input {
+    width: inherit;
+    padding: 18px 24px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    border-radius: 18px;
+    border: 1px solid #c0c0c0;
+  }
+  main .sell_block .sell_block--form .sell_block--form_userTools button {
+    border-radius: 18px;
+    padding: 18px 0;
+    border: none;
+    background: #012AC0;
+    color: #fff;
+  }
 }/*# sourceMappingURL=content.css.map */
